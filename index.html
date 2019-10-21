@@ -1645,11 +1645,16 @@ a4 { font-weight:bold;
   </div>
   </div> 
 </body>
+	<audio id="beep">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 
 
 <script type="text/javascript">
 
 
+	soun11.onclick = function(){
+		beep.play();}	
 		
 function lookDiv2 (){ 
   document.getElementById("hin2").style.display="none"; 
@@ -2210,7 +2215,7 @@ aa2.onclick = function(){
 			soun11.style.display = "none";
 			music.style.display = "inline";
 			musi.style.display = "inline";
-			self.setTimeout("lookDiv4()",3000);
+			self.setTimeout("lookDiv4()",700);
 		on = true;
 			}
 	soun6.onclick = function(){
@@ -2402,7 +2407,7 @@ aa2.onclick = function(){
 			soun9.style.display = "none";
 			soun10.style.display = "none";
 			soun11.style.display = "none";
-			self.setTimeout("lookDiv4()",2000);
+			self.setTimeout("lookDiv4()",700);
 			bx.style.display = "inline";
 			flashlight.style.display = "inline";
 			foo.style.display = "inline";
